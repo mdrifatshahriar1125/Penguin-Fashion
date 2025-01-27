@@ -6,18 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>penguin fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .bebas-neue {
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
+        .roboto {
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+
+        }
+    </style>
 </head>
 
 <body>
-    <header class="max-w-7xl mx-auto pt-3 ">
-        <div class="flex items-center">
-            <div class="header-name ">
-                <img class="w-3/12 h-auto" src="icons/logo.png" alt="">
+    <header class=" bg-[#FFFBF0] ">
+    <div class="max-w-7xl mx-auto pt-3">
+        <div class="flex items-center md:flex-col md:justify-center lg:flex-row ">
+            <div class="header-name flex">
+                <img class="w-3/12 h-auto " src="icons/logo.png" alt="">
             </div>
             <div>
                 <nav>
-                    <ul class="flex gap-5">
+                    <ul class="flex gap-5 md:flex-col lg:flex-row">
                         <li>Home</li>
                         <li>Product</li>
                         <li>About us</li>
@@ -26,9 +49,29 @@
                 </nav>
             </div>
         </div>
-        <div>
-
+      
+        <div class="flex justify-between items-center pt-8 pb-16 md:flex-col lg:flex-row">
+            <div>
+                <h1 class="font-normal"><span class="text-[#FABE4C] text-7xl bebas-neue">Be the Penguins</span>
+                    <br> <span class="text-[#363958] text-7xl roboto">of Winter</span>
+                </h1>
+                <p class="text-base font-norma">
+                    Lorem Ipsum is simply dummy text of the printing <br>
+                    and typesetting industry.
+                </p>
+                <button class="w-40 h-14 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl my-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    BUY NOW</button>
+            </div>
+            <div >
+                <img class="pr-52" src="images/model.png" alt="">
+            </div>
         </div>
+    </div>
+       
     </header>
     <main>
 
